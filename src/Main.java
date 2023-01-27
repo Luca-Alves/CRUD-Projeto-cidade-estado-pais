@@ -1,15 +1,15 @@
-import controller.impl.CidadeControllerArmaz;
-import view.CidadesView;
+import view.menu.MenuView;
 
-import java.util.Scanner;
+public class Main{
 
-public class Main {
+    public static void main(String[] args){
 
-    public static void main(String[] args) {
+        MenuView menuView = new MenuView();
+
+        menuView.menu();
 
 
-        CidadesView view =  new CidadesView(new CidadeControllerArmaz(),new Scanner(System.in));
-        view.menu();
+
 
     }
 }
